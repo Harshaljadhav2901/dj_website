@@ -1,0 +1,226 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.banner {
+    font-family: 'Poppins', sans-serif;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background:url('bg_img1.jpg') no-repeat center ;
+    color: white;
+    overflow: hidden;
+}
+
+.container {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+
+.navbar {
+    position: absolute;
+    font-family: 'Poppins', sans-serif;
+    top: 50%;
+    right: 20px;
+    transform: translateY(-50%);
+    text-align: right;
+}
+
+.navbar a {
+    display: block;
+    margin: 25px 0;
+    text-decoration: none;
+    color: white;
+    font-size: 25px;
+    letter-spacing: 3px;
+    transition: color 0.3s, transform 0.3s;
+}
+
+.navbar a:hover {
+    color: #ff007f;
+    transform: scale(1.1);
+    text-shadow: 1px 1px 6px rgba(255, 0, 127, 0.7);
+}
+
+/* Socials Section */
+.socials-section {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+}
+
+.socials-title {
+    font-size: 18px;
+    /*font-weight: bold;*/
+    margin-bottom: 5px;
+    text-align: left;
+}
+
+.socials-icons {
+    display: flex; /* Changed to horizontal layout */
+    gap: 20px; /* Space between icons */
+}
+
+.social-icon {
+    font-size: 24px;
+    color: white;
+    text-decoration: none;
+}
+
+/* Brand colors for icons */
+.social-icon.instagram {
+    color: white;
+}
+
+.social-icon.facebook {
+    color: white;
+}
+
+.social-icon.youtube {
+    color: white;
+}
+
+.social-icon.spotify {
+    color: white;
+}
+
+
+
+.about-me {
+    background-color: #111;
+    color: white;
+    text-align: center;
+    padding: 50px 20px;
+}
+
+.about-container {
+    max-width: 800px;
+    margin: 0 auto;
+    font-family: 'Poppins', sans-serif;
+}
+
+.about-title {
+    font-size: 28px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.about-description {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.image-slider {
+    width: 100%;
+    height: 300px;
+    overflow: hidden;
+    position: relative;
+    border-radius: 10px;
+}
+
+.slider-wrapper {
+    display: flex;
+    width: 700%;
+    animation: slide 30s infinite;
+}
+
+.slide {
+    width: 100%;
+    flex: 1;
+}
+
+.slide img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+}
+
+@keyframes slide {
+    0% { transform: translateX(0%); }
+    33% { transform: translateX(-100%); }
+    66% { transform: translateX(-200%); }
+    100% { transform: translateX(0%); }
+}
+
+.contact-footer {
+    background-color: #222;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+    position: relative;
+    width: 100%;
+}
+
+.contact-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.contact-title {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.social-icons {
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+}
+
+.social-icon {
+    font-size: 24px;
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s ease-in-out;
+}
+
+.social-icon.instagram:hover {
+    color: #E4405F;
+}
+
+.social-icon.facebook:hover {
+    color: #1877F2;
+}
+
+.social-icon.youtube:hover {
+    color: #FF0000;
+}
+
+.social-icon.spotify:hover {
+    color: #1DB954;
+}
+
+.social-icon.email:hover {
+    color: #D44638;
+}
+
+.social-icon.soundcloud:hover {
+    color: #de6412;
+}
+
+.social-icon.website:hover {
+    color: #1877F2;
+}
+
+@media (max-width: 768px) {
+    .social-icons {
+        gap: 10px;
+    }
+}
+
+
